@@ -1,4 +1,4 @@
-defmodule ExPygments do
+defmodule Pygments do
   @moduledoc """
   Syntax highlight using Pygments.
   """
@@ -9,15 +9,15 @@ defmodule ExPygments do
   Start the application.
   """
   def start(_type, _args) do
-    opts = [strategy: :one_for_one, name: ExPygments.Supervisor]
-    Supervisor.start_link([ ExPygments.Worker ], opts)
+    opts = [strategy: :one_for_one, name: Pygments.Supervisor]
+    Supervisor.start_link([ Pygments.Worker ], opts)
   end
 
   @doc """
   Highlight source code.
   """
   def highlight(source, language \\ "text") do
-    GenServer.call(ExPygments.Worker, {:highlight, source, language}, :infinity)
+    GenServer.call(Pygments.Worker, {:highlight, source, language}, :infinity)
   end
 
   @doc """

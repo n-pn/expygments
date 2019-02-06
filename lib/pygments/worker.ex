@@ -1,4 +1,4 @@
-defmodule ExPygments.Worker do
+defmodule Pygments.Worker do
   use GenServer
 
   def init(opts), do: {:ok, opts}

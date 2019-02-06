@@ -1,9 +1,9 @@
-defmodule ExPygments.Mixfile do
+defmodule Pygments.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :expygments,
+      app: :pygments,
       version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env == :prod,
@@ -14,7 +14,7 @@ defmodule ExPygments.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {ExPygments, []},
+      mod: {Pygments, []},
       extra_applications: [:logger]
     ]
   end
