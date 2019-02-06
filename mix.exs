@@ -5,7 +5,7 @@ defmodule ExPygments.Mixfile do
     [
       app: :expygments,
       version: "0.1.0",
-      elixir: "~> 1.5",
+      elixir: "~> 1.8",
       start_permanent: Mix.env == :prod,
       deps: deps()
     ]
@@ -22,7 +22,7 @@ defmodule ExPygments.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:erlport, "~> 0.9"}
+      {:erlport, "~> 0.10"}
     ]
   end
 end
