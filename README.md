@@ -13,7 +13,7 @@ pip3 install pygments
 ## Installation
 
 ```elixir
-{:pygments, github: "nipinium/expygments"}
+{:pygments, "~> 1.0"}
 ```
 
 ## Usage
