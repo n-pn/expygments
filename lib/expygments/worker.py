@@ -16,6 +16,7 @@ def remove_garbage(html):
   return html.replace(prepend, '').replace(append, '')
 
 def call(source, lang):
-  # Note: on python 3 erlport converts binary value to bytes(), but pygments get_lexer_by_name expects a str() instead
+  # Note: on python 3 erlport converts binary value to bytes(),
+  # but pygments get_lexer_by_name expects a str() instead
   html = highlight(source, get_lexer(lang.decode("utf-8")), HtmlFormatter())
   return remove_garbage(html)

@@ -9,14 +9,8 @@ defmodule ExPygments do
   Start the application.
   """
   def start(_type, _args) do
-    import Supervisor.Spec, warn: false
-
-    children = [
-      worker(ExPygments.Worker, [ExPygments.Worker])
-    ]
-
     opts = [strategy: :one_for_one, name: ExPygments.Supervisor]
-    Supervisor.start_link(children, opts)
+    Supervisor.start_link([ ExPygments.Worker ], opts)
   end
 
   @doc """
