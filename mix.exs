@@ -34,7 +34,7 @@ defmodule Pygments.Mixfile do
   defp source_url, do: "https://github.com/nipinium/expygments"
 
   defp description do
-    "Syntax hightlight using Python's [Pygments](http://pygments.org) library"
+    "Syntax highlight using Python's [Pygments](http://pygments.org) library"
   end
 
   defp package do
