@@ -1,6 +1,6 @@
 # ExPygments
 
-Syntax hightlight using [Pygments](http://pygments.org)
+Syntax highlight using [Pygments](http://pygments.org)
 
 ## Preinstall
 
